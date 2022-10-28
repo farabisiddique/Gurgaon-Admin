@@ -1,6 +1,21 @@
+
+/* @font-face {
+    font-family: Arial;
+    src: url('../fonts/Arial/Arialn.ttf');
+} */
+
+:root {
+    --color-main: #ED2B2B;  
+}
+
+
+.arial{
+    font-family: Arial;
+}
+
 .mainPage{
     width: 100%;
-    height: 650px;
+    height: 100vh;
     
 }
 
@@ -18,7 +33,7 @@
 
 
 .borderSpecial{
-    border: 3px solid #ED2B2B;
+    border: 3px solid var(--color-main);
     border-radius: 28px;
 }
 
@@ -38,15 +53,14 @@ input:focus{
 }
 
 input[type="password"]::placeholder {
-                 
-    /* Firefox, Chrome, Opera */
+
     text-align: left;
 }
 
 .loginBtn{
     width: 100%;
     border-radius: 28px;
-    color: #ED2B2B;
+    color: var(--color-main);
     font-weight: bold;
     background-color: white;
 }
@@ -58,5 +72,54 @@ input[type="password"]::placeholder {
 .downskirt{
     width: 100%;
     height: 15px;
-    background-color: #ED2B2B;
+    background-color: var(--color-main);
 }
+
+
+.topbar{
+    height: 50px;
+    background-color: var(--color-main);
+    display: flex;
+    align-items: center;
+}
+
+.clipboard_icon{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 50%;
+}
+
+.clipboard_icon img{
+    width: 50%;
+    height: 60%;
+}
+
+.add_icon, .bell_icon{
+    width: 25px;
+    height: 25px;
+}
+
+.statbox{
+    width: 100px;
+    height: 100px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.colorMain{
+    color: var(--color-main);
+}
+
+.totalBox{
+    background-color: var(--color-main);
+    
+}
+
+.boxtext{
+    font-size: 13px;
+}
+
