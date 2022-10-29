@@ -75,7 +75,10 @@ input[type="password"]::placeholder {
     background-color: var(--color-main);
 }
 
-
+.headerPart{
+    z-index: 999;
+    /* top: 0px; */
+}
 .topbar{
     height: 50px;
     background-color: var(--color-main);
@@ -104,8 +107,8 @@ input[type="password"]::placeholder {
 }
 
 .statbox{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    aspect-ratio: 1/1;
     margin-right: 2%;
     margin-left: 2%;
 }
@@ -121,5 +124,57 @@ input[type="password"]::placeholder {
 
 .boxtext{
     font-size: 13px;
+}
+
+.mainPart{
+    z-index: 0;
+}
+
+.eachOrder{
+    height: 80px;
+    /* border: 3px solid yellowgreen; */
+}
+
+.orderDetails{
+    font-weight: bolder;
+}
+
+.orderAvatar{
+    border-color: black !important;
+    border-radius: 5px;
+    aspect-ratio: 1 / 1;
+}
+
+.orderAvatar img{
+    border-radius: 5px;
+}
+
+.timeBox{
+    border-radius: 12px;
+    position: relative;
+}
+
+.lateText{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    color: rgba(0, 0, 0, 0.644);
+}
+
+.delvBoyStat{
+    width: 2rem;
+}
+
+.cakeAddAvt{
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.322);
+}
+
+.add_icon_box{
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
 }
 

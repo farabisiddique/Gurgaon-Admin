@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Gurgaon Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="mainPage d-flex flex-column justify-content-between align-items-center position-relative">
+
+        <div class="container-fluid m-0 p-0 sticky-top headerPart" style="background-color: white;">
+            <div class="container-fluid topbar d-flex justify-content-between align-items-center">
+                <div class="clipboard_icon">
+                    <img src="./img/cake_icon.png" alt="">
+                </div>
+    
+                <h2 class="text-light m-0">ADD ORDER</h2>
+    
+                <div class="other_icon">
+                    <img src="./img/bell_icon.png" class="bell_icon">
+                </div>
+                 
+            </div>
+    
+           
+        </div>
+        
+
+        <div class="container-fluid mainPart">
+            <form>
+                <div class=" mt-5 d-flex justify-content-between">
+                    
+                        <img src="./img/cake.jpg" class="cakeAddAvt m-3 p-0">
+                    
+                    
+                    <div class="add_icon_box border border-1 border-dark d-flex justify-content-center align-items-center">
+                        <i class="bi bi-plus-circle text-dark fw-bold"></i>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="cakename" class="form-label">Cake Name</label>
+                    <input type="text" class="form-control" id="cakename" name="cakename">
+                  </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="form-group mb-3">
+                            <label for="flavour" class="form-label">Flavour</label>
+                            <input type="text" class="form-control" id="flavour" name="flavour">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group mb-3">
+                            <label for="weight" class="form-label">Weight</label>
+                            <input type="number" class="form-control" id="weight" name="weight">
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            
+            
+
+        </div>
+        
+        <button class="container-fluid totalBox fixed-bottom border-0 p-3">
+            <h2 class="m-0 text-light">Save</h2>
+        </button>
+        
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script>
+        // const x = document.querySelector(".headerPart");
+        // console.log(x.scrollHeight);
+        // document.querySelector(".mainPart").style.marginTop = (x.scrollHeight+6)+"px";
+
+    </script>
+</body>
+</html>
