@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Gurgaon Admin</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        select{
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='red' class='bi bi-chevron-down' viewBox='0 0 15 12'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' stroke='red' stroke-width='2'/></svg>") !important;
+        }
+        
+        
+    </style>
 </head>
 <body>
     <div class="mainPage d-flex flex-column justify-content-between align-items-center position-relative">
@@ -31,61 +38,218 @@
         </div>
         
 
-        <div class="container-fluid mainPart">
+        <div class="container-fluid mainPart pb-5">
             <form>
-                <div class=" mt-5 d-flex justify-content-between">
+                <div class="mt-1 d-flex justify-content-between">
                     
                         <img src="./img/cake.jpg" class="cakeAddAvt m-3 p-0">
                     
                     
-                    <div class="add_icon_box border border-1 border-dark d-flex justify-content-center align-items-center">
+                    <a class="add_icon_box border border-1 border-dark d-flex justify-content-center align-items-center mt-3" href="#">
                         <i class="bi bi-plus-circle text-dark fw-bold"></i>
-                    </div>
+                    </a>
                 </div>
                 <div class="form-group mb-3">
                     <label for="cakename" class="form-label">Cake Name</label>
-                    <input type="text" class="form-control" id="cakename" name="cakename">
-                  </div>
+                    <input type="text" class="form-control orderInput" id="cakename" name="cakename" value="Aesthetic Black Forest Cake">
+                </div>
                 <div class="row">
                     <div class="col-3">
                         <div class="form-group mb-3">
                             <label for="flavour" class="form-label">Flavour</label>
-                            <input type="text" class="form-control" id="flavour" name="flavour">
+                            <input type="text" class="form-control orderInput" id="flavour" name="flavour" value="Vanilla">
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="form-group mb-3">
                             <label for="weight" class="form-label">Weight</label>
-                            <input type="number" class="form-control" id="weight" name="weight">
+                            <input type="text" class="form-control orderInput" id="weight" name="weight" value="1 kg">
                         </div>
                     </div>
+                    <div class="col-4">
+                        <div class="form-group mb-3">
+                            <label for="option" class="form-label">OPTION</label>
+                            <select class="form-select mb-3 orderInput" id="option" name="option">
+                                <option value="1" selected>Eggless</option>
+                                <option value="2">With Egg</option>
+                                <option value="3">Another option</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+
                 </div>
-                
-                
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+
+                <div class="row">
+                    <label for="date" class="form-label">Delivery Date & Time</label>
+                    <div class="col-4">
+                        <div class="form-group mb-3">
+                            
+                            <input type="date" class="form-control orderInput" id="ddate" name="ddate" value="11-06-2022">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-group mb-3">
+                            
+                            <input type="number" class="form-control orderInput" id="time_hour" name="time_hour" value="1">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group mb-3">
+                            
+                            <input type="number" class="form-control orderInput" id="time_minutes" name="time_minutes" value="30">
+                        </div>
+                        
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group mb-3">
+                            <select class="form-select mb-3 orderInput" id="option" name="option">
+                                <option value="0" selected>AM</option>
+                                <option value="1">PM</option>
+                                
+                            </select>
+                        </div>
+                        
+                    </div>
+
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+
+                <div class="form-group mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <input type="text" class="form-control orderInput" id="message" name="message" value="Happy birthday papa">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="notes" class="form-label">Notes</label>
+                    <input type="text" class="form-control orderInput" id="notes" name="notes" value="Sent Candles">
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group mb-3">
+                            <label for="pay_method" class="form-label">Payment method</label>
+                            <select class="form-select mb-3 orderInput" id="pay_method" name="pay_method">
+                                <option value="0" selected>Online</option>
+                                <option value="1">Offline</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group mb-3">
+                            <label for="amount" class="form-label">Amount</label>
+                            <input type="number" class="form-control orderInput" id="amount" name="amount" value="2070">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="bakername" class="form-label">Baker</label>
+                    <select class="form-select mb-3 orderInput" id="bakername" name="bakername">
+                        <option value="0" selected>Ram</option>
+                        <option value="1">Rohan</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group mb-3">
+                            <label for="receiver_name" class="form-label">Receiver Name</label>
+                            <input type="text" class="form-control orderInput" id="receiver_name" name="receiver_name" value="Kokila Rathi">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group mb-3">
+                            <label for="receiver_phone" class="form-label">Receiver Phone</label>
+                            <input type="number" class="form-control orderInput" id="receiver_phone" name="receiver_phone" value="9560022904">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="shipping_address" class="form-label">Shipping</label>
+                    <input type="text" class="form-control orderInput" id="shipping_address" name="shipping_address" value="Sector 51">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="receiver_address" class="form-label">Receiver Address</label>
+                    <input type="text" class="form-control orderInput" id="receiver_address" name="receiver_address" value="004 tower14A Orchid Petals, Sohna road">
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group mb-3">
+                            <label for="sendername" class="form-label">Sender Name</label>
+                            <input type="text" class="form-control orderInput" id="sendername" name="sendername" value="Kokila Rathi">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group mb-3">
+                            <label for="senderphone" class="form-label">Sender Phone</label>
+                            <input type="number" class="form-control orderInput" id="senderphone" name="senderphone" value="9560022904">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="rider_name" class="form-label">Rider</label>
+                    <select class="form-select mb-3 orderInput" id="rider_name" name="rider_name" disabled>
+                        <option value="0" selected>Ram</option>
+                        <option value="1">Rohan</option>
+                    </select>
+                </div>
+
+                <div class="row mb-5">
+                    <label for="d_time" class="form-label">Delivery Time</label>
+                    
+                    <div class="col-2">
+                        <div class="form-group mb-3">
+                            
+                            <input type="number" class="form-control orderInput" id="d_hour" name="d_hour" value="1" disabled>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group mb-3">
+                            
+                            <input type="number" class="form-control orderInput" id="d_minute" name="d_minute" value="30" disabled>
+                        </div>
+                        
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group mb-3">
+                            <select class="form-select mb-3 orderInput" id="d_format" name="d_format" disabled>
+                                <option value="0" selected>AM</option>
+                                <option value="1">PM</option>
+                                
+                            </select>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                
+
+                
             </form>
             
             
 
         </div>
         
-        <button class="container-fluid totalBox fixed-bottom border-0 p-3">
-            <h2 class="m-0 text-light">Save</h2>
+        <button class="container-fluid totalBox fixed-bottom border-0 p-3" type="submit">
+            <h2 class="m-0 text-light">
+                Save
+            </h2>
         </button>
         
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-    <script>
-        // const x = document.querySelector(".headerPart");
-        // console.log(x.scrollHeight);
-        // document.querySelector(".mainPart").style.marginTop = (x.scrollHeight+6)+"px";
-
-    </script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    
 </body>
 </html>
