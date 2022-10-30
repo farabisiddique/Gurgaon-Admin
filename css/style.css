@@ -140,6 +140,8 @@ input[type="password"]::placeholder {
 }
 
 .orderAvatar{
+    width: 16%;
+    
     border-color: black !important;
     border-radius: 5px;
     aspect-ratio: 1 / 1;
